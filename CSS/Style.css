@@ -7,6 +7,19 @@
     font-family: "Bangela";
     src: url(../Font/Bangela.otf);
 }
+
+.header{
+    position: sticky;
+    top:0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: darkorange;
+    border-bottom: 1px solid;
+    padding: 0 20px;
+    z-index: 100;
+}
 /*Estilo titulo*/
 .hero{
     color: orange;
@@ -28,6 +41,28 @@
     background-color: darkorange;
 padding-left: 5px;
 }
+
+.header .header_nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header_nav_menu{
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+a{
+     text-decoration: none;
+     color: black;
+     border-radius: 5px;
+    justify-content: right;
+
+}
 /*textos*/
 .texto{
     text-align: center;
@@ -45,18 +80,20 @@ padding-left: 5px;
     display: block
 }
 .listas{
-    display: inline;
+ display: inline;
     /*background-color: orange;*/
     font-size: 30px;
-    border: double 4px orange;
+    /* border: double 4px orange; */
     margin: 10px;
 }
 /*logos*/
 .logo{
     width: 50px;
     height: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    margin-left: 5px;
+    border-radius: 5px;
 }
 /*Fotos*/
 .frente_local{
@@ -64,6 +101,12 @@ padding-left: 5px;
     margin-left: 10px;
 }
 .foto_mascotas{
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.img_inicio{
+    height: 200px;
     height: 200px;
     margin-top: 10px;
     margin-left: 10px;
@@ -79,10 +122,35 @@ padding-left: 5px;
     margin: 50px;
 }
 .contenedor{
-    display: flex;
+     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+/*grid gallery*/
+.container{
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+/*Contenedor de la grid*/
+.grid_gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 15px; 
+}
 
+.grid_gallery .img_huellita{
+    position: relative;
+}
+
+.grid_gallery .img_huellita span{
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+    color: black;
 }
 .footer{
     margin-left: 10px;

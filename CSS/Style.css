@@ -32,6 +32,7 @@
     /*Bordes*/
     border: solid 3px rgb(236, 93, 11);
 }
+
 .titulo{
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -57,11 +58,17 @@ padding-left: 5px;
     align-items: center;
 }
 a{
+    /* background: linear-gradient(90deg, red, yellow); */
      text-decoration: none;
      color: black;
      border-radius: 5px;
     justify-content: right;
 
+}
+.listas:hover{
+    /* background-color: rgb(51, 159, 209); */
+    background: linear-gradient(90deg, red, yellow);
+    border-radius: 5px;
 }
 /*textos*/
 .texto{
@@ -124,7 +131,13 @@ a{
     width: 300px;
     height: 250px;
 }
-
+.servicio{
+    animation-name: algo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4seg;
+    animation-delay: 1seg; 
+}
 .contenedor{
      display: flex;
     flex-wrap: wrap;
@@ -148,6 +161,7 @@ a{
 
 .grid_gallery .img_huellita{
     position: relative;
+    transition: transform 1s;
 }
 
 .grid_gallery .img_huellita span{
@@ -155,6 +169,11 @@ a{
     bottom: -20px;
     left: 60px;
     color: black;
+    
+}
+.img_huellita:hover{
+     transform: scale(1.2);
+
 }
 /*Grid Inicio*/
 .container_inicio .servicio{
@@ -165,13 +184,32 @@ a{
     border-radius: 6px;
     width: 100%;
     gap: 15px;
+
 }
 .container_inicio_texto{
  width: 300px; 
+
 }
+
 .footer{
     margin-left: 10px;
 }
+
+@keyframes algo {
+    0%{
+        transform: scale(0.9);
+    }
+    25%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
 @media screen and (max-width: 480px){
     .hero h1{
         font-size: 50px;

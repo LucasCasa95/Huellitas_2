@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostraps styles-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/Style.css">
     <title>Huellitas - Inicio</title>
@@ -25,6 +27,28 @@
                         </ul>
                     </nav>
     </header>
+    <!--Carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Img/Promos_que _explotan.webp" class="d-block w-100" alt="promos">
+          </div>
+          <div class="carousel-item">
+            <img src="./Img/kg_de_regalo.webp" class="d-block w-100" alt="alimento con kg gratis">
+          </div>
+          <div class="carousel-item">
+            <img src="./Img/descuento_de_alimento.webp" class="d-block w-100" alt="alimento con descuento">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         <!--info local-->
         <section class="contenedor">
             <img src="./Img/problema-de-comportamiento-perros-y-gatos-650x390.jpg" alt="perros y gatos" class="foto_mascotas">
@@ -38,9 +62,9 @@
                 <div class="servicio">
                     <img src="./Img/Paseador_huellita.jpg" alt="paseo de perros" class="img_inicio">
                     <p class="container_inicio_texto texto1">Contamos con un <strong>Excelente servicio</strong> de paseadores de perros, los cuales cuentan con entrevistas, cursos, exámenes, manueales de procedimientos y calificaciones de clientes.</p>
-                    <div class="servicio">
+                    <div class="servicio servicio_estilista">
                         <p class="container_inicio_texto texto2">También tenemos un servicio de peluqueria y estetica canina donde tu mascota sera tratada y cuidada como por sus dueños.</p>
-                        <img src="./Img/Estilista_huellita.jpg" alt="estilistas" class="img_inicio">
+                        <img src="./Img/Estilista_huellita.jpg" alt="estilistas" class="img_inicio img_estilista">
 
                     </div>
                     <div class="servicio">
@@ -49,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            <script src="./Js/bootstrap.bundle.min.js"></script>
 </body>
 <footer class="footer">Huellitas 2012</footer>
 </html>

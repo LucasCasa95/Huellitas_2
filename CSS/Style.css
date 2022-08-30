@@ -185,9 +185,7 @@ a{
 
 }
 /*carousel promos*/
-.slide{
-    margin-top: 10px;
-}
+
 .slide img{
     height: 60vh;
 }
@@ -223,6 +221,13 @@ a{
 
     .listas a{
         font-size: 15px;
+    }
+
+    .mapa_local{
+        width: 100%;
+    }
+    .frente_local{
+        width: 90%;
     }
 
     .contenedor{

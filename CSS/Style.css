@@ -254,7 +254,9 @@ a{
         margin-left: 70px;
         gap: 10px;
     }
-
+    .slide img{
+        height: 35vh;
+    }
 
     .footer{
         margin-top: 20px;

@@ -146,6 +146,10 @@ a{
     margin-left: 5px;
     font-size: 2rem;
 }
+.texto_productos{
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
 /*CARDS PROMOS*/
 .row_card{
     display: grid;

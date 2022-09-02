@@ -74,7 +74,8 @@ h1 {
   align-items: center; }
   .contenedor .texto_productos {
     margin-left: 5px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-family: fantasy; }
 
 .container_producto {
   width: 100%;
@@ -90,6 +91,8 @@ h1 {
     .container_producto .grid_gallery .img_huellita {
       position: relative;
       transition: transform 1s; }
+      .container_producto .grid_gallery .img_huellita:hover {
+        transform: scale(1.2); }
       .container_producto .grid_gallery .img_huellita .img_producto {
         width: 200px;
         height: 200px;
@@ -102,9 +105,6 @@ h1 {
         bottom: -20px;
         left: 60px;
         color: black; }
-
-.img_huellita:hover {
-  transform: scale(1.2); }
 
 .footer {
   margin-left: 10px; }

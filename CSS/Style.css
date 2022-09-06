@@ -69,22 +69,34 @@ a{
     justify-content: right;
 
 }
-.listas:hover{
-    /* background-color: rgb(51, 159, 209);
-    background: linear-gradient(90deg, red, yellow);
-    border-radius: 5px; */
+.listas:nth-child(2) a,
+.listas:nth-child(4) a{
+    background: pink;
 }
+.listas:nth-child(3) a{
+    background-color: aqua;
+}
+.listas:last-child a{
+    background-color: aqua;
+}
+
 /*textos*/
 .texto{
     text-align: center;
     color: rgb(1, 1, 12);
     margin: 5px;
 }
-.texto_inicio{
+.contenedor_descripcion h3{
     text-align: left;
+    font-size: 2.5rem;
+}
+.texto_inicio{
+    text-align: center;
     color: rgb(1, 1, 12);
     margin: 5px;
-    width: 300px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+
 }
 
 /*telefono*/
@@ -103,8 +115,6 @@ a{
 .logo{
     width: 50px;
     height: 50px;
-    /* margin-top: 10px;
-    margin-left: 10px; */
     margin-left: 5px;
     border-radius: 5px;
 }
@@ -112,6 +122,7 @@ a{
 .frente_local{
     margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 50px;
 }
 .foto_mascotas{
     height: 200px;
@@ -156,6 +167,7 @@ a{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin-top: 15px;
+    margin-bottom: 20px;
     /* gap: 15px; */
 }
 /*Grid producto*/
@@ -172,6 +184,7 @@ a{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 2fr);
     gap: 15px; 
+    margin-bottom: 20px;
 }
 
 .grid_gallery .img_huellita{
@@ -211,9 +224,58 @@ a{
  width: 300px; 
 
 }
+/*Footer*/
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: darkorange;
+}
 
-.footer{
-    margin-left: 10px;
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.logo_footer_img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.box_footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.box_footer h2{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.box_footer a{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.box_footer a:hover{
+    opacity: 0.8;
+}
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+}
+.box_copyright p{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 480px){

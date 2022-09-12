@@ -13,16 +13,21 @@ footer .container_footer .box_footer a {
   border-radius: 5px;
   justify-content: right; }
 
-.hero {
-  color: orange;
-  text-align: center;
-  font-size: 50px;
-  font-family: "Bangela";
-  background-image: url(../Img/camino-rastro-huellas-blancas-sobre-fondo-negro-perros-caminando-patron-huella-animal_391563-237.webp);
-  padding-top: 100px;
-  padding-bottom: 50px;
-  /*Bordes*/
-  border: solid 3px #ec5d0b; }
+.titulo {
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .titulo .hero {
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Bangela";
+    background-image: url(../Img/camino-rastro-huellas-blancas-sobre-fondo-negro-perros-caminando-patron-huella-animal_391563-237.webp);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /*Bordes*/
+    border: solid 3px #ec5d0b; }
+    .titulo .hero h1 {
+      font-size: 6rem; }
 
 .header {
   position: sticky;
@@ -67,21 +72,74 @@ footer .container_footer .box_footer a {
           border-radius: 5px;
           justify-content: right; }
 
-h1 {
-  font-size: 6rem; }
+/*Carousel*/
+.slide .d-block {
+  height: 60vh; }
 
-.titulo {
-  background-size: cover;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+.contenedor_inicio .contenedor_descripcion h3 {
+  text-align: left;
+  font-size: 2.5rem; }
 
-.contenedor {
+.contenedor_inicio .contenedor_descripcion .texto_inicio {
+  text-align: center;
+  color: #01010c;
+  margin: 5px;
+  padding-bottom: 20px;
+  font-size: 2rem; }
+
+.contenedor_productos {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
-  .contenedor .texto_productos {
+  .contenedor_productos .texto_productos {
     margin-left: 5px;
     font-size: 1.5rem;
     font-family: fantasy; }
+
+.contenedor_contacto .foto_mascotas {
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.texto_contacto {
+  text-align: center;
+  color: #01010c;
+  margin: 5px; }
+  .texto_contacto .telefono {
+    font-weight: bold;
+    display: block; }
+
+.contenedor_nosotros .texto_nosotros {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-family: fantasy; }
+
+.frente_local {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 50px; }
+
+.contenedor_promos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .contenedor_promos .texto_promos {
+    margin-left: 5px;
+    font-size: 2rem; }
+
+.container_inicio .servicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6px;
+  width: 100%;
+  gap: 15px; }
+  .container_inicio .servicio .container_inicio_texto {
+    width: 300px; }
+  .container_inicio .servicio .img_inicio {
+    width: 300px;
+    height: 250px; }
 
 .container_producto {
   width: 100%;
@@ -111,6 +169,13 @@ h1 {
         bottom: -20px;
         left: 60px;
         color: black; }
+
+.container_promos .row_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px; }
 
 footer {
   width: 100%;
@@ -163,3 +228,38 @@ footer {
 .listas1, .listas3 {
   background-color: blue;
   border-radius: 5px; }
+
+@media screen and (max-width: 480px) {
+  .titulo .hero h1 {
+    font-size: 50px; }
+  .header h2 {
+    font-size: 20px; }
+  .listas a {
+    font-size: 15px; }
+  .mapa_local {
+    width: 100%; }
+  .frente_local {
+    width: 90%; }
+  .contenedor {
+    /* display: none; */
+    text-align: center; }
+  .foto_mascotas {
+    padding-left: 100px; }
+  .texto_inicio {
+    text-align: center; }
+  .grid_gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .img_huellita {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .servicio_estilista {
+    flex-direction: column-reverse; }
+  .row_card {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 70px;
+    gap: 10px; }
+  .slide img {
+    height: 35vh; }
+  .footer {
+    margin-top: 20px; } }

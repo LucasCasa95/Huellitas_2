@@ -228,7 +228,6 @@ a{
 footer{
     width: 100%;
     padding: 50px 0px;
-
     background-color: darkorange;
 }
 
@@ -300,7 +299,6 @@ footer{
     }
 
     .contenedor{
-        /* display: none; */
         text-align: center;
     }
     .foto_mascotas{

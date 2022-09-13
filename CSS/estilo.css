@@ -101,6 +101,10 @@ footer .container_footer .box_footer a {
   margin-top: 10px;
   margin-left: 10px; }
 
+.mapa_local {
+  width: 100%;
+  margin-top: 20px; }
+
 .texto_contacto {
   text-align: center;
   color: #01010c;
@@ -116,8 +120,7 @@ footer .container_footer .box_footer a {
 
 .frente_local {
   margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 50px; }
+  margin-left: 10px; }
 
 .contenedor_promos {
   display: flex;
@@ -126,6 +129,39 @@ footer .container_footer .box_footer a {
   .contenedor_promos .texto_promos {
     margin-left: 5px;
     font-size: 2rem; }
+
+.contacto {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  border: solid 1px gray; }
+  .contacto .contacto_formulario {
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 100px;
+    margin-top: 10px; }
+    .contacto .contacto_formulario .contacto_tarjeta .datos, .contacto .contacto_formulario .contacto_tarjeta .mensaje {
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      margin: 10px;
+      padding: 5px; }
+    .contacto .contacto_formulario .contacto_tarjeta .boton {
+      display: block;
+      background-color: #1b4fdf;
+      color: white;
+      font-size: 1.5rem;
+      width: 150px;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 5px; }
+    .contacto .contacto_formulario .contacto_info ul {
+      list-style: none; }
+      .contacto .contacto_formulario .contacto_info ul .lista_info {
+        margin-top: 20px; }
 
 .container_inicio .servicio {
   display: flex;
@@ -238,28 +274,44 @@ footer {
     font-size: 15px; }
   .mapa_local {
     width: 100%; }
+  .contenedor_nosotros .texto_nosotros {
+    font-size: 18px;
+    text-align: center; }
   .frente_local {
-    width: 90%; }
+    width: 90%;
+    padding-left: 20px; }
   .contenedor {
-    /* display: none; */
     text-align: center; }
   .foto_mascotas {
     padding-left: 100px; }
   .texto_inicio {
     text-align: center; }
-  .grid_gallery {
+  .contenedor_productos .texto_productos {
+    font-size: 18px;
+    text-align: center; }
+  .container_producto .grid_gallery {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-  .img_huellita {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-  .servicio_estilista {
-    flex-direction: column-reverse; }
-  .row_card {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+    .container_producto .grid_gallery .img_huellita:hover {
+      transform: none; }
+  .contenedor_promos .texto_promos {
+    font-size: 18px;
+    text-align: center; }
+  .container_promos .row_card {
+    grid-template-columns: 1fr;
     margin-left: 70px;
     gap: 10px; }
+  .servicio_estilista {
+    flex-direction: column-reverse; }
   .slide img {
     height: 35vh; }
-  .footer {
-    margin-top: 20px; } }
+  .contacto .contacto_formulario {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .contacto .contacto_formulario .contacto_tarjeta h3, .contacto .contacto_formulario .contacto_tarjeta h5 {
+      text-align: center; }
+  .container_footer .footer_a {
+    width: 100%;
+    flex-wrap: wrap; }
+  .box_copyright .box_copyright_p {
+    padding-bottom: 20px; } }

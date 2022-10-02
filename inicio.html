@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/estilo.css">
+    <script src="https://kit.fontawesome.com/6d52aa604a.js" crossorigin="anonymous"></script>
     <title>Huellitas - Inicio</title>
     <meta name="description" content="Encontrá en Huellitas los mejores productos y servicios para tus mascotas">
     <meta name="keywords" content="Inicio, Petshop, Servicios">
@@ -23,7 +24,7 @@
                         <ul class="header_nav_menu">
                             <img src="./Img/Huellita_perro.jpg" alt="Huellita_perro" class="logo">
                             <li class="listas"><a href="contacto.html" class="enlace_nav">Contacto</a></li>
-                            <li class="listas"><a href="nosotros.html" class="enlace_nav">Nosotros</a></li>
+                            <li class="listas"><a href="servicios.html" class="enlace_nav">Servicios</a></li>
                             <li class="listas"><a href="productos.html" class="enlace_nav">Productos</a></li>
                             <li class="listas"><a href="promos.html" class="enlace_nav">Promos</a></li>
                         </ul>
@@ -33,13 +34,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./Img/Promos_que _explotan.webp" class="d-block w-100" alt="promos">
+            <img src="./Img/Promos_que _explotan.webp" class="d-block w-100 carousel_img" alt="promos">
           </div>
           <div class="carousel-item">
-            <img src="./Img/kg_de_regalo.webp" class="d-block w-100" alt="alimento con kg gratis">
+            <img src="./Img/kg_de_regalo.webp" class="d-block w-100 carousel_img" alt="alimento con kg gratis">
           </div>
           <div class="carousel-item">
-            <img src="./Img/descuento_de_alimento.webp" class="d-block w-100" alt="alimento con descuento">
+            <img src="./Img/descuento_de_alimento.webp" class="d-block w-100 carousel_img" alt="alimento con descuento">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -59,29 +60,30 @@
             </div>
         </section>
             <!--Grid gallery-->
-            <div class="container_inicio container">
-                <div class="servicio">
-                    <img src="./Img/Paseador_huellita.jpg" alt="paseo de perros" class="img_inicio">
-                    <p class="container_inicio_texto texto1">Contamos con un <strong>Excelente servicio</strong> de paseadores de perros, los cuales cuentan con entrevistas, cursos, exámenes, manueales de procedimientos y calificaciones de clientes.</p>
-                    <div class="servicio servicio_estilista">
-                        <p class="container_inicio_texto texto2">También tenemos un servicio de peluqueria y estetica canina donde tu mascota sera tratada y cuidada como por sus dueños.</p>
-                        <img src="./Img/Estilista_huellita.jpg" alt="estilistas" class="img_inicio img_estilista">
-                    </div>
-                    <div class="servicio">
-                        <img src="./Img/veterinario_huellita.jpg" alt="estetoscopio con huellita" class="img_inicio">
-                        <p class="container_inicio_texto texto3">Excelente equipo de medicos veterinarios con amplia experiencia para tratamientos y consultas.</p>
-                    </div>
-                </div>
-            </div>
+            <section class="container container_inicio">
+                  <div class="d-flex flex-column align-items-center div_inicio1">
+                    <img src="./Img/diversos productos.webp" alt="diversos productos para mascotas" class="img_inicio">
+                    <h2 class="subtitulo">Comodidad</h2>
+                    <p class="texto">Hacer las compras para tu mascota ahora es más facíl y cómodo. Desde tu computadora o móvil podes acceder a nuestra tiendo online.</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center div_inicio2">
+                    <img src="./Img/entrega-a-domicilio.webp" alt="envio a domicilio" class="img_inicio">
+                    <h2 class="subtitulo">Rapidez</h2>
+                    <p class="texto">Podés recibir tu compra en 24hs si vivís dentro de nuestra área de cobertura que comprende la mayor parte de Capital Federal. En el resto de la país pódes recibirlo en pocos días.</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center div_inicio3">
+                    <img src="./Img/Casa naranja.jpg" alt="casa naranja" class="img_inicio">
+                    <h2 class="subtitulo">Retirá sin cargo</h2>
+                    <p class="texto">Elegí los productos para tu mascota. Podés retirar tu pedido sin cargo y de un día hábil para otro en nuestro local.</p>
+                  </div>
+            </section>
             <footer>
               <div class="container_footer">
                 <div class="box_footer">
-                  <div class="logo_footer">
-                    <img src="./Img/Huellita_perro.jpg" alt="" class="logo_footer_img">
-                  </div>
-                  <div class="terms">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos corporis aut dolorem perspiciatis velit, ratione quia! Sint ratione velit quam est ipsam, modi soluta consectetur rem. Nostrum assumenda accusamus eveniet.</p>
-                  </div>
+                  <h2>Redes sociales</h2>
+                  <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                  <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
                 </div>
                 <div class="box_footer">
                   <h2>Categorias</h2>

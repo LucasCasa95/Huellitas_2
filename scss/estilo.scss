@@ -12,21 +12,16 @@ $estilo_letra: fantasy;
 }
 
 $menu: (/*Declaro el map*/
-blanco: rgb(15, 230, 33),
-rojo: red,
-azul: blue,
-agua: rgb(0, 225, 255),
 borde: 5px,
 tFuente: 35px
 );
 
 %enlaces{
     text-decoration: none;
-    color: black;
     border-radius: 5px;
     justify-content: right;
 }
-
+/*Banner*/
 .titulo{
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -45,7 +40,7 @@ tFuente: 35px
         }
     }
 }
-
+/*Header*/
 .header{
     position: sticky;
     top:0;
@@ -96,17 +91,18 @@ tFuente: 35px
     }
 }
 
+/*Inicio*/
 /*Carousel*/
 .slide{
     .d-block{
         height: 60vh;
     }
 }
-
 .contenedor_inicio{
     .contenedor_descripcion{
         h3{
-            text-align: left;
+            text-align: center;
+            margin-top: 20px;
             font-size: 2.5rem;
         }
         .texto_inicio{
@@ -118,61 +114,51 @@ tFuente: 35px
         }
     }
 }
-
-.contenedor_productos{
+.container_inicio{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    .texto_productos{
-        margin-left: 5px;
-        font-size: $size-letra;
-        font-family: $estilo_letra;
+    justify-content: space-around;
+    .div_inicio1{
+        .img_inicio{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+        }
+        .texto{
+            width: 200px;
+            text-align: center;
+        }
+    }
+    .div_inicio2{
+        .img_inicio{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+        }
+        .texto{
+            width: 250px;
+            text-align: center;
+        }
+    }
+    .div_inicio3{
+        .img_inicio{
+            height: 200px;
+            width: 250px;
+            margin-bottom: 15px;
+            border-radius: 120px;
+        }
+        .texto{
+            width: 250px;
+            text-align: center;
+        }
     }
 }
-
-.contenedor_contacto{
-    .foto_mascotas{
-        height: 200px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-}
+/*Contacto*/
 .mapa_local{
     width: 100%;
     margin-top: 20px;
 }
-.texto_contacto{
-    text-align: center;
-    color:rgb(1, 1, 12);
-    margin: 5px;
-    .telefono{
-        font-weight: bold;
-        display: block;
-    }
-}
-
-.contenedor_nosotros{
-    .texto_nosotros{
-        margin-left: 5px;
-        font-size: $size-letra;
-        font-family: $estilo_letra;
-    }
-}
-.frente_local{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.contenedor_promos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    .texto_promos{
-    margin-left: 5px;
-    font-size: 2rem;
-    }
-}
-
 .contacto{
     max-width: 1300px;
     margin-left: auto;
@@ -215,26 +201,57 @@ tFuente: 35px
         }
     }
 }
-
-.container_inicio{
-    .servicio{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 6px;
-        width: 100%;
-        gap: 15px;
-        .container_inicio_texto{
-            width: 300px;
-        }
-        .img_inicio{
-            width: 300px;
-            height: 250px;
+/*Servicio*/
+.container_servicios{
+    .texto_servicio{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+    }
+    .container_servicios_sec{
+        .servicios_box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 6px;
+            width: 900px;
+            padding: 20px;
+            margin: 15px;
+            background-color: rgba(235, 131, 13, 0.75);
+            border-radius: 5px;
+            gap: 15px;
+            .img_servicio{
+                height: 264px;
+                width: 352px;
+                border-radius: 10px;
+            }
+            .servicios_texto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                .subtitulo_servicio{
+                    font-size: 1.8em;
+                    padding-bottom: 30px;
+                }
+                .texto{
+                    font-size: 1.2em;
+                }
+            }
         }
     }
 }
-
+/*Productos*/
+.contenedor_productos{
+    .texto_productos{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: $size-letra;
+        text-align: center;
+    }
+}
 .container_producto{
     width: 100%;
     display: flex;
@@ -248,16 +265,13 @@ tFuente: 35px
         gap: 15px;
         .img_huellita{
             position: relative;
-            transition: transform 1s;
-            &:hover{
-                transform: scale(1.2);
-            }
             .img_producto{
                 width: 200px;
                 height: 200px;
                 margin-top: 10px;
                 margin-left: 10px;
                 border: solid;
+                color: black;
                 border-radius: 5px;
             }
             span{
@@ -269,7 +283,15 @@ tFuente: 35px
         }
     }
 }
-
+/*Promos*/
+.contenedor_promos{
+    .texto_promos{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    }
+}
 .container_promos{
     .row_card{
     display: grid;
@@ -279,7 +301,7 @@ tFuente: 35px
     margin-bottom: 20px;
     }
 }
-
+/*Footer*/
 footer{
     width: 100%;
     padding: 50px, 0px;
@@ -310,13 +332,14 @@ footer{
         .box_footer{
             h2{
                 margin-bottom: 30px;
+                color: rgb(5, 5, 5);
                 font-weight: 700;
             }
             a{
                 margin-top: 10px;
                 font-weight: 600;
                 @extend %enlaces;
-                color: rgb(13, 33, 216);
+                color: rgb(253, 253, 253);
                 font-size: 20px;
             }
         }
@@ -336,24 +359,8 @@ footer{
     }
 }
 
-// @each $item, $color in $menu {
-//     .color-#{$item} {
-//         background-color: $color;
-//     }
-// }
-
 .enlace_nav{
      font-size: map-get($menu, tFuente);
-}
-
-.listas2, .listas4{
-    background-color: map-get($menu, agua);
-    border-radius: map-get($menu, borde);
-}
-
-.listas1, .listas3{
-    background-color: map-get($menu, azul);
-    border-radius: map-get($menu, borde);
 }
 
 @media screen and (max-width: 480px){
@@ -376,16 +383,6 @@ footer{
     .mapa_local{
         width: 100%;
     }
-    .contenedor_nosotros{
-        .texto_nosotros{
-            font-size: 18px;
-            text-align: center;
-        }
-    }
-    .frente_local{
-        width: 90%;
-        padding-left: 20px;
-    }
 
     .contenedor{
         text-align: center;
@@ -396,6 +393,10 @@ footer{
     .texto_inicio{
         text-align: center;
     }
+
+.container_inicio{
+    flex-direction: column;
+}
 
     .contenedor_productos{
         .texto_productos{
@@ -425,12 +426,15 @@ footer{
         gap: 10px;
     }
 }
-    .servicio_estilista{
-        flex-direction: column-reverse;
-    }
-
-    .slide img{
-        height: 35vh;
+    .slide{
+        .carousel-inner{
+            .carousel-item{
+                .carousel_img{
+                    height: 40vh;
+                    width: auto;
+                }
+            }
+        }
     }
 
 .contacto{
@@ -444,10 +448,39 @@ footer{
         }
     }
 }
+
+.container_servicios{
+    .texto_servicio{
+        font-size: 1.8rem;
+    }
+    .container_servicios_sec{
+        .servicios_box{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: fit-content;
+            width: 280px;
+            align-items: center;
+            .servicios_texto{
+                width: 200px;
+                margin-top: 20px;
+                .subtitulo_servicio{
+                    font-size: 1.4rem;
+                    padding-bottom: 15px;
+                }
+                .texto{
+                    font-size: 1rem;
+                }
+            }
+            .img_servicio{
+                height: 165px;
+                width: 220px;
+            }
+        }
+    }
+}
 .container_footer{
-    .footer_a{
-        width: 100%;
-        flex-wrap: wrap;
+    .box_footer{
+        width: 200px;
     }
 }
 .box_copyright{

@@ -9,10 +9,10 @@
 
 footer .container_footer .box_footer a {
   text-decoration: none;
-  color: black;
   border-radius: 5px;
   justify-content: right; }
 
+/*Banner*/
 .titulo {
   background-size: cover;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
@@ -29,6 +29,7 @@ footer .container_footer .box_footer a {
     .titulo .hero h1 {
       font-size: 6rem; }
 
+/*Header*/
 .header {
   position: sticky;
   top: 0;
@@ -72,12 +73,14 @@ footer .container_footer .box_footer a {
           border-radius: 5px;
           justify-content: right; }
 
+/*Inicio*/
 /*Carousel*/
 .slide .d-block {
   height: 60vh; }
 
 .contenedor_inicio .contenedor_descripcion h3 {
-  text-align: left;
+  text-align: center;
+  margin-top: 20px;
   font-size: 2.5rem; }
 
 .contenedor_inicio .contenedor_descripcion .texto_inicio {
@@ -87,48 +90,38 @@ footer .container_footer .box_footer a {
   padding-bottom: 20px;
   font-size: 2rem; }
 
-.contenedor_productos {
+.container_inicio {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-  .contenedor_productos .texto_productos {
-    margin-left: 5px;
-    font-size: 1.5rem;
-    font-family: fantasy; }
+  justify-content: space-around; }
+  .container_inicio .div_inicio1 .img_inicio {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 20px; }
+  .container_inicio .div_inicio1 .texto {
+    width: 200px;
+    text-align: center; }
+  .container_inicio .div_inicio2 .img_inicio {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 20px; }
+  .container_inicio .div_inicio2 .texto {
+    width: 250px;
+    text-align: center; }
+  .container_inicio .div_inicio3 .img_inicio {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 120px; }
+  .container_inicio .div_inicio3 .texto {
+    width: 250px;
+    text-align: center; }
 
-.contenedor_contacto .foto_mascotas {
-  height: 200px;
-  margin-top: 10px;
-  margin-left: 10px; }
-
+/*Contacto*/
 .mapa_local {
   width: 100%;
   margin-top: 20px; }
-
-.texto_contacto {
-  text-align: center;
-  color: #01010c;
-  margin: 5px; }
-  .texto_contacto .telefono {
-    font-weight: bold;
-    display: block; }
-
-.contenedor_nosotros .texto_nosotros {
-  margin-left: 5px;
-  font-size: 1.5rem;
-  font-family: fantasy; }
-
-.frente_local {
-  margin-top: 10px;
-  margin-left: 10px; }
-
-.contenedor_promos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-  .contenedor_promos .texto_promos {
-    margin-left: 5px;
-    font-size: 2rem; }
 
 .contacto {
   max-width: 1300px;
@@ -163,19 +156,46 @@ footer .container_footer .box_footer a {
       .contacto .contacto_formulario .contacto_info ul .lista_info {
         margin-top: 20px; }
 
-.container_inicio .servicio {
+/*Servicio*/
+.container_servicios .texto_servicio {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.5rem; }
+
+.container_servicios .container_servicios_sec .servicios_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   border-radius: 6px;
-  width: 100%;
+  width: 900px;
+  padding: 20px;
+  margin: 15px;
+  background-color: rgba(235, 131, 13, 0.75);
+  border-radius: 5px;
   gap: 15px; }
-  .container_inicio .servicio .container_inicio_texto {
-    width: 300px; }
-  .container_inicio .servicio .img_inicio {
-    width: 300px;
-    height: 250px; }
+  .container_servicios .container_servicios_sec .servicios_box .img_servicio {
+    height: 264px;
+    width: 352px;
+    border-radius: 10px; }
+  .container_servicios .container_servicios_sec .servicios_box .servicios_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; }
+    .container_servicios .container_servicios_sec .servicios_box .servicios_texto .subtitulo_servicio {
+      font-size: 1.8em;
+      padding-bottom: 30px; }
+    .container_servicios .container_servicios_sec .servicios_box .servicios_texto .texto {
+      font-size: 1.2em; }
+
+/*Productos*/
+.contenedor_productos .texto_productos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center; }
 
 .container_producto {
   width: 100%;
@@ -189,22 +209,27 @@ footer .container_footer .box_footer a {
     grid-template-rows: repeat(2, 2fr);
     gap: 15px; }
     .container_producto .grid_gallery .img_huellita {
-      position: relative;
-      transition: transform 1s; }
-      .container_producto .grid_gallery .img_huellita:hover {
-        transform: scale(1.2); }
+      position: relative; }
       .container_producto .grid_gallery .img_huellita .img_producto {
         width: 200px;
         height: 200px;
         margin-top: 10px;
         margin-left: 10px;
         border: solid;
+        color: black;
         border-radius: 5px; }
       .container_producto .grid_gallery .img_huellita span {
         position: absolute;
         bottom: -20px;
         left: 60px;
         color: black; }
+
+/*Promos*/
+.contenedor_promos .texto_promos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center; }
 
 .container_promos .row_card {
   display: grid;
@@ -213,6 +238,7 @@ footer .container_footer .box_footer a {
   margin-top: 15px;
   margin-bottom: 20px; }
 
+/*Footer*/
 footer {
   width: 100%;
   padding: 50px, 0px;
@@ -237,11 +263,12 @@ footer {
         font-size: 18px; }
     footer .container_footer .box_footer h2 {
       margin-bottom: 30px;
+      color: #050505;
       font-weight: 700; }
     footer .container_footer .box_footer a {
       margin-top: 10px;
       font-weight: 600;
-      color: #0d21d8;
+      color: #fdfdfd;
       font-size: 20px; }
   footer .box_copyright {
     max-width: 1200px;
@@ -257,14 +284,6 @@ footer {
 .enlace_nav {
   font-size: 35px; }
 
-.listas2, .listas4 {
-  background-color: #00e1ff;
-  border-radius: 5px; }
-
-.listas1, .listas3 {
-  background-color: blue;
-  border-radius: 5px; }
-
 @media screen and (max-width: 480px) {
   .titulo .hero h1 {
     font-size: 50px; }
@@ -274,18 +293,14 @@ footer {
     font-size: 15px; }
   .mapa_local {
     width: 100%; }
-  .contenedor_nosotros .texto_nosotros {
-    font-size: 18px;
-    text-align: center; }
-  .frente_local {
-    width: 90%;
-    padding-left: 20px; }
   .contenedor {
     text-align: center; }
   .foto_mascotas {
     padding-left: 100px; }
   .texto_inicio {
     text-align: center; }
+  .container_inicio {
+    flex-direction: column; }
   .contenedor_productos .texto_productos {
     font-size: 18px;
     text-align: center; }
@@ -301,17 +316,34 @@ footer {
     grid-template-columns: 1fr;
     margin-left: 70px;
     gap: 10px; }
-  .servicio_estilista {
-    flex-direction: column-reverse; }
-  .slide img {
-    height: 35vh; }
+  .slide .carousel-inner .carousel-item .carousel_img {
+    height: 40vh;
+    width: auto; }
   .contacto .contacto_formulario {
     display: grid;
     grid-template-columns: 1fr; }
     .contacto .contacto_formulario .contacto_tarjeta h3, .contacto .contacto_formulario .contacto_tarjeta h5 {
       text-align: center; }
-  .container_footer .footer_a {
-    width: 100%;
-    flex-wrap: wrap; }
+  .container_servicios .texto_servicio {
+    font-size: 1.8rem; }
+  .container_servicios .container_servicios_sec .servicios_box {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: 280px;
+    align-items: center; }
+    .container_servicios .container_servicios_sec .servicios_box .servicios_texto {
+      width: 200px;
+      margin-top: 20px; }
+      .container_servicios .container_servicios_sec .servicios_box .servicios_texto .subtitulo_servicio {
+        font-size: 1.4rem;
+        padding-bottom: 15px; }
+      .container_servicios .container_servicios_sec .servicios_box .servicios_texto .texto {
+        font-size: 1rem; }
+    .container_servicios .container_servicios_sec .servicios_box .img_servicio {
+      height: 165px;
+      width: 220px; }
+  .container_footer .box_footer {
+    width: 200px; }
   .box_copyright .box_copyright_p {
     padding-bottom: 20px; } }
